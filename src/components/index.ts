@@ -1,6 +1,8 @@
 import { App } from 'vue'
 import { defineAsyncComponent } from 'vue'
-import '../style.css'
+import '../style/main.css'
+import '../style/font/iconfont.css'
+import '../style/font/iconfont.js'
 
 // import { defineAsyncComponent, AsyncComponentLoader } from 'vue'
 
@@ -33,6 +35,10 @@ export default {
     app.component(
       'zxButton1',
       defineAsyncComponent(() => import('./Button1/Button1.vue'))
+    )
+    app.component(
+      'dataCard',
+      defineAsyncComponent(() => import('./Card/DataCard.vue'))
     )
   }
 }
