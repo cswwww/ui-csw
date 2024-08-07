@@ -9,7 +9,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     Button: typeof import('./src/components/Button/Button.vue')['default']
     Button1: typeof import('./src/components/Button1/Button1.vue')['default']
+    DataCard: typeof import('./src/components/Card/DataCard.vue')['default']
+    IconCard: typeof import('./src/components/Card/IconCard.vue')['default']
     LineTitle: typeof import('./src/components/Title/LineTitle.vue')['default']
     Loading: typeof import('./src/components/Loading/Loading.vue')['default']
+    TitleCard: typeof import('./src/components/Card/TitleCard.vue')['default']
   }
 }

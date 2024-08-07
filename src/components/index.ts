@@ -40,5 +40,13 @@ export default {
       'dataCard',
       defineAsyncComponent(() => import('./Card/DataCard.vue'))
     )
+    app.component(
+      'titleCard',
+      defineAsyncComponent(() => import('./Card/TitleCard.vue'))
+    )
+    app.component(
+      'iconCard',
+      defineAsyncComponent(() => import('./Card/IconCard.vue'))
+    )
   }
 }

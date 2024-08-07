@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-08-07 09:30:04
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 09:42:46
+ * @LastEditTime: 2024-08-07 10:27:24
  * @FilePath: \storybook\src\components\Button1\Button1.vue
  * @Description: 组件 - 按钮 - 1
 -->
@@ -30,7 +30,10 @@ withDefaults(
   >
     <img v-if="img" class="size-10" :src="img" />
     <div v-if="icon" class="size-10 rounded-lg bg-zx-6 bg-opacity-50">
-      <div class="iconfont flex-center size-10 text-2xl" :class="'icon-' + icon"></div>
+      <div
+        class="iconfont flex size-10 items-center justify-center text-2xl"
+        :class="'icon-' + icon"
+      ></div>
     </div>
     <div class="flex w-full justify-between">
       <div class="text-xl">{{ label }}</div>
