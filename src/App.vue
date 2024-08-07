@@ -2,6 +2,7 @@
 
 <template>
   <div>Storybook</div>
-  <Button label="123" />
-  <Button>asd</Button>
+  <Button class="m-9" label="123" />
+  <zxButton>asd</zxButton>
+  <zx-loading />
 </template>
