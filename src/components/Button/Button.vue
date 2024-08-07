@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-06 09:44:31
+ * @LastEditTime: 2024-08-06 19:25:56
  * @FilePath: \storybook\src\components\Button\Button.vue
  * @Description: 组件 - 按钮
 -->
@@ -13,9 +13,11 @@ const props = withDefaults(
     type?: 'normal' | 'primary' | 'active' | 'text' | 'map'
   }>(),
   {
-    type: 'primary'
+    type: 'normal'
   }
 )
+
+// 动态样式属性
 const classes = computed(() => ({
   'zx-button': true,
   [`button--${props.type}`]: true
@@ -25,7 +27,7 @@ const classes = computed(() => ({
 <template>
   <div :class="classes">
     <span v-if="icon" :class="['icon-' + icon, 'iconfont']" />
-    <span>
+    <span v-if="$slots.default || label">
       <slot>{{ label }}</slot>
     </span>
   </div>
