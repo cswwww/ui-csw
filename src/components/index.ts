@@ -17,6 +17,16 @@ import '../style/font/iconfont.js'
 //   }
 // }
 
+import Button from './Button/Button.vue'
+import Loading from './Loading/Loading.vue'
+import LineTitle from './Title/LineTitle.vue'
+import Button1 from './Button/Button1.vue'
+import DataCard from './Card/DataCard.vue'
+import TitleCard from './Card/TitleCard.vue'
+import IconCard from './Card/IconCard.vue'
+import Dialog1 from './Dialog/Dialog1.vue'
+
+export { Button, Loading, LineTitle, Button1, DataCard, TitleCard, IconCard, Dialog1 }
 // ! 手动引用组件
 export default {
   install(app: App) {
@@ -29,24 +39,28 @@ export default {
       defineAsyncComponent(() => import('./Loading/Loading.vue'))
     )
     app.component(
-      'lineTitle',
+      'LineTitle',
       defineAsyncComponent(() => import('./Title/LineTitle.vue'))
     )
     app.component(
-      'zxButton1',
-      defineAsyncComponent(() => import('./Button1/Button1.vue'))
+      'Button1',
+      defineAsyncComponent(() => import('./Button/Button1.vue'))
     )
     app.component(
-      'dataCard',
+      'DataCard',
       defineAsyncComponent(() => import('./Card/DataCard.vue'))
     )
     app.component(
-      'titleCard',
+      'TitleCard',
       defineAsyncComponent(() => import('./Card/TitleCard.vue'))
     )
     app.component(
-      'iconCard',
+      'IconCard',
       defineAsyncComponent(() => import('./Card/IconCard.vue'))
+    )
+    app.component(
+      'Dialog1',
+      defineAsyncComponent(() => import('./Dialog/Dialog1.vue'))
     )
   }
 }
