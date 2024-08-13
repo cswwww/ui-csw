@@ -4,9 +4,8 @@ import '../style/main.css'
 import '../style/font/iconfont.css'
 import '../style/font/iconfont.js'
 
-// import { defineAsyncComponent, AsyncComponentLoader } from 'vue'
-
 // ! 全局组件引用管理
+// import { defineAsyncComponent, AsyncComponentLoader } from 'vue'
 // const componentss = import.meta.glob('./**/*.vue')
 // export default {
 //   install(app: App) {
@@ -25,8 +24,19 @@ import DataCard from './Card/DataCard.vue'
 import TitleCard from './Card/TitleCard.vue'
 import IconCard from './Card/IconCard.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
+import Card2 from './Card/Card2.vue'
 
-export { Button, Loading, LineTitle, Button1, DataCard, TitleCard, IconCard, Dialog1 }
+export {
+  Button as zxButton,
+  Loading,
+  LineTitle,
+  Button1,
+  DataCard,
+  TitleCard,
+  IconCard,
+  Dialog1,
+  Card2
+}
 // ! 手动引用组件
 export default {
   install(app: App) {
@@ -62,5 +72,6 @@ export default {
       'Dialog1',
       defineAsyncComponent(() => import('./Dialog/Dialog1.vue'))
     )
+    app.component('Card2', Card2)
   }
 }

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-09 15:09:03
+ * @LastEditTime: 2024-08-12 17:07:15
  * @FilePath: \storybook\src\components\Dialog\Dialog1.vue
  * @Description: 弹出窗 - 模板1
 -->
@@ -32,7 +32,7 @@ const handleClose = () => {
     <div class="dialog-title">
       <slot name="title"> 标题 </slot>
       <span
-        title="关闭弹窗"
+        title="关闭"
         class="iconfont icon-close clickable-icon"
         @click="close(handleClose)"
       />
