@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-12 17:07:15
+ * @LastEditTime: 2024-08-20 17:13:07
  * @FilePath: \storybook\src\components\Dialog\Dialog1.vue
  * @Description: 弹出窗 - 模板1
 -->
@@ -31,11 +31,7 @@ const handleClose = () => {
   <div v-if="show" class="dialog-container">
     <div class="dialog-title">
       <slot name="title"> 标题 </slot>
-      <span
-        title="关闭"
-        class="iconfont icon-close clickable-icon"
-        @click="close(handleClose)"
-      />
+      <span title="关闭" class="iconfont icon-close clickable-icon" @click="close(handleClose)" />
     </div>
 
     <div class="dialog-content">
@@ -44,12 +40,12 @@ const handleClose = () => {
   </div>
 
   <!-- 遮罩层 -->
-  <div v-if="show" title="点击该遮罩层可关闭弹窗" @click="close(handleClose)" class="dialog-mask" />
+  <div v-if="show" @click="close(handleClose)" class="dialog-mask" />
 </template>
 
 <style scoped>
 .dialog-container {
-  @apply pointer-events-auto fixed left-1/2 top-1/2 z-50 flex max-h-[80vh] w-fit -translate-x-1/2 -translate-y-1/2 flex-col rounded-r-lg border-2 border-[#00a1ff] bg-zx-8 bg-opacity-90 text-zx-2;
+  @apply pointer-events-auto fixed left-1/2 top-1/2 z-50 flex max-h-[80vh] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border-2 border-[#00a1ff] bg-zx-8 bg-opacity-90 text-zx-2;
 }
 .dialog-title {
   @apply flex justify-between border-b border-zx-5 p-4 text-lg;

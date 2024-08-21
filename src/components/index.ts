@@ -16,6 +16,7 @@ import '../style/font/iconfont.js'
 //   }
 // }
 
+// ! 组件
 import Button from './Button/Button.vue'
 import Loading from './Loading/Loading.vue'
 import LineTitle from './Title/LineTitle.vue'
@@ -37,6 +38,12 @@ export {
   Dialog1,
   Card2
 }
+
+// ! 方法
+import createDialog from './Dialog/Dialog.ts'
+
+export { createDialog }
+
 // ! 手动引用组件
 export default {
   install(app: App) {
