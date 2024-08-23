@@ -12,6 +12,7 @@ declare module 'vue' {
     Card2: typeof import('./src/components/Card/Card2.vue')['default']
     DataCard: typeof import('./src/components/Card/DataCard.vue')['default']
     Dialog1: typeof import('./src/components/Dialog/Dialog1.vue')['default']
+    Header1: typeof import('./src/components/Header/Header1.vue')['default']
     IconCard: typeof import('./src/components/Card/IconCard.vue')['default']
     LineTitle: typeof import('./src/components/Title/LineTitle.vue')['default']
     Loading: typeof import('./src/components/Loading/Loading.vue')['default']

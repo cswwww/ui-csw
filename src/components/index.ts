@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import { defineAsyncComponent } from 'vue'
+// import { defineAsyncComponent } from 'vue'
 import '../style/main.css'
 import '../style/font/iconfont.css'
 import '../style/font/iconfont.js'
@@ -26,6 +26,7 @@ import TitleCard from './Card/TitleCard.vue'
 import IconCard from './Card/IconCard.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
 import Card2 from './Card/Card2.vue'
+import Header1 from './Header/Header1.vue'
 
 export {
   Button as zxButton,
@@ -36,7 +37,8 @@ export {
   TitleCard,
   IconCard,
   Dialog1,
-  Card2
+  Card2,
+  Header1
 }
 
 // ! 方法
@@ -47,38 +49,15 @@ export { createDialog }
 // ! 手动引用组件
 export default {
   install(app: App) {
-    app.component(
-      'zxButton',
-      defineAsyncComponent(() => import('./Button/Button.vue'))
-    )
-    app.component(
-      'zxLoading',
-      defineAsyncComponent(() => import('./Loading/Loading.vue'))
-    )
-    app.component(
-      'LineTitle',
-      defineAsyncComponent(() => import('./Title/LineTitle.vue'))
-    )
-    app.component(
-      'Button1',
-      defineAsyncComponent(() => import('./Button/Button1.vue'))
-    )
-    app.component(
-      'DataCard',
-      defineAsyncComponent(() => import('./Card/DataCard.vue'))
-    )
-    app.component(
-      'TitleCard',
-      defineAsyncComponent(() => import('./Card/TitleCard.vue'))
-    )
-    app.component(
-      'IconCard',
-      defineAsyncComponent(() => import('./Card/IconCard.vue'))
-    )
-    app.component(
-      'Dialog1',
-      defineAsyncComponent(() => import('./Dialog/Dialog1.vue'))
-    )
+    app.component('zxButton', Button)
+    app.component('zxLoading', Loading)
+    app.component('LineTitle', LineTitle)
+    app.component('Button1', Button1)
+    app.component('DataCard', DataCard)
+    app.component('TitleCard', TitleCard)
+    app.component('IconCard', IconCard)
+    app.component('Dialog1', Dialog1)
     app.component('Card2', Card2)
+    app.component('Header1', Header1)
   }
 }

@@ -25,7 +25,6 @@
     "@storybook/addon-essentials": "^8.2.8",
     "@storybook/addon-interactions": "^8.2.8",
     "@storybook/addon-links": "^8.2.8",
-    "@storybook/addon-mdx-gfm": "8.2.8",
     "@storybook/addon-onboarding": "^8.2.8",
     "@storybook/blocks": "^8.2.8",
     "@storybook/test": "^8.2.8",
