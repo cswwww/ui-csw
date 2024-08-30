@@ -16,6 +16,7 @@ declare module 'vue' {
     IconCard: typeof import('./src/components/Card/IconCard.vue')['default']
     LineTitle: typeof import('./src/components/Title/LineTitle.vue')['default']
     Loading: typeof import('./src/components/Loading/Loading.vue')['default']
+    Timeline: typeof import('./src/components/Timeline/Timeline.vue')['default']
     TitleCard: typeof import('./src/components/Card/TitleCard.vue')['default']
   }
 }

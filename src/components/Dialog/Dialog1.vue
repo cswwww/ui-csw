@@ -19,8 +19,9 @@ withDefaults(
 
 // 操作：关闭弹窗
 const emit = defineEmits<{
-  (e: 'update:show', show: boolean): void
+  'update:show': [show: boolean]
 }>()
+
 const handleClose = () => {
   // ! 需搭配 v-model:show 来使用
   emit('update:show', false)

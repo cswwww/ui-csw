@@ -27,6 +27,7 @@ import IconCard from './Card/IconCard.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
 import Card2 from './Card/Card2.vue'
 import Header1 from './Header/Header1.vue'
+import Timeline from './Timeline/Timeline.vue'
 
 export {
   Button as zxButton,
@@ -38,6 +39,7 @@ export {
   IconCard,
   Dialog1,
   Card2,
+  Timeline,
   Header1
 }
 
@@ -58,6 +60,7 @@ export default {
     app.component('IconCard', IconCard)
     app.component('Dialog1', Dialog1)
     app.component('Card2', Card2)
+    app.component('Timeline', Timeline)
     app.component('Header1', Header1)
   }
 }
