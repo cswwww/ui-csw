@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-12-18 16:25:42
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-30 09:29:11
+ * @LastEditTime: 2024-09-03 14:01:06
  * @FilePath: \storybook\src\components\Timeline\timeLine.vue
  * @Description: 时间轴
 -->
@@ -25,6 +25,7 @@ const emit = defineEmits<{
 
 let timerInterval: ReturnType<typeof setInterval> // 定时器
 const currentTick = ref<number>(NaN) // 当前刻度
+const hoverTick = ref<number>(NaN) // 鼠标悬停刻度
 const isPlaying = ref<boolean>(false) // 是否正在播放
 
 // 操作：点击时间轴
@@ -111,11 +112,39 @@ watch(
       <div
         v-for="(item, index) in data"
         :key="item"
-        :title="item[label]"
         :class="index === currentTick ? 'bg-zx-3' : 'bg-zx-8'"
         @click="clickTimeLine(index)"
-        class="h-4 w-full cursor-pointer rounded-sm bg-opacity-70 text-zx-1"
-      />
+        @mouseenter="() => (hoverTick = index)"
+        @mouseleave="() => (hoverTick = NaN)"
+        class="relative h-4 w-full cursor-pointer rounded-sm bg-opacity-70 text-zx-1"
+      >
+        <Transition>
+          <div
+            class="absolute bottom-full left-1/2 w-max -translate-x-1/2 text-center text-zx-1 transition-opacity"
+            v-if="index === hoverTick && index !== currentTick"
+          >
+            {{ item[label] || item }}
+          </div>
+        </Transition>
+
+        <div
+          class="absolute left-1/2 top-full w-max -translate-x-1/2 cursor-auto select-none text-center text-zx-3 transition-opacity"
+          v-if="index === currentTick"
+        >
+          {{ item[label] || item }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+</style>
