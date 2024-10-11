@@ -1,8 +1,8 @@
 <!--
  * @Date: 2023-12-18 16:25:42
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-09-03 14:01:06
- * @FilePath: \storybook\src\components\Timeline\timeLine.vue
+ * @LastEditTime: 2024-09-10 11:16:45
+ * @FilePath: \storybook\src\components\Timeline\Timeline.vue
  * @Description: 时间轴
 -->
 <script setup lang="ts">
@@ -76,6 +76,11 @@ watch(
     currentTick.value = NaN
   }
 )
+
+defineExpose({
+  currentTick,
+  isPlaying
+})
 </script>
 
 <template>

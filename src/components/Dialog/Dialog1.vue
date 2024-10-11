@@ -32,7 +32,7 @@ const handleClose = () => {
   <div v-if="show" class="dialog-container">
     <div class="dialog-title">
       <slot name="title"> 标题 </slot>
-      <span title="关闭" class="iconfont icon-close clickable-icon" @click="close(handleClose)" />
+      <span title="关闭" class="clickable-icon" @click="close(handleClose)">×</span>
     </div>
 
     <div class="dialog-content">

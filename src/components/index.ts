@@ -1,8 +1,6 @@
 import { App } from 'vue'
 // import { defineAsyncComponent } from 'vue'
 import '../style/main.css'
-import '../style/font/iconfont.css'
-import '../style/font/iconfont.js'
 
 // ! 全局组件引用管理
 // import { defineAsyncComponent, AsyncComponentLoader } from 'vue'
@@ -21,26 +19,36 @@ import Button from './Button/Button.vue'
 import Loading from './Loading/Loading.vue'
 import LineTitle from './Title/LineTitle.vue'
 import Button1 from './Button/Button1.vue'
+import Button2 from './Button/Button2.vue'
 import DataCard from './Card/DataCard.vue'
 import TitleCard from './Card/TitleCard.vue'
-import IconCard from './Card/IconCard.vue'
+import IconCard1 from './Card/IconCard1.vue'
+import IconCard2 from './Card/IconCard2.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
 import Card2 from './Card/Card2.vue'
+import Card3 from './Card/Card3.vue'
+import Card4 from './Card/Card4.vue'
 import Header1 from './Header/Header1.vue'
 import Timeline from './Timeline/Timeline.vue'
+import Header2 from './Header/Header2.vue'
 
 export {
   Button as zxButton,
   Loading,
   LineTitle,
   Button1,
+  Button2,
   DataCard,
   TitleCard,
-  IconCard,
+  IconCard1,
+  IconCard2,
   Dialog1,
   Card2,
+  Card3,
+  Card4,
   Timeline,
-  Header1
+  Header1,
+  Header2
 }
 
 // ! 方法
@@ -55,12 +63,17 @@ export default {
     app.component('zxLoading', Loading)
     app.component('LineTitle', LineTitle)
     app.component('Button1', Button1)
+    app.component('Button2', Button2)
     app.component('DataCard', DataCard)
     app.component('TitleCard', TitleCard)
-    app.component('IconCard', IconCard)
+    app.component('IconCard1', IconCard1)
+    app.component('IconCard2', IconCard2)
     app.component('Dialog1', Dialog1)
     app.component('Card2', Card2)
+    app.component('Card3', Card3)
+    app.component('Card4', Card4)
     app.component('Timeline', Timeline)
     app.component('Header1', Header1)
+    app.component('Header2', Header2)
   }
 }

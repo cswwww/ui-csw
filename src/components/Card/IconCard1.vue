@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-01 10:21:13
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 14:33:21
- * @FilePath: \storybook\src\components\Card\iconCard.vue
+ * @LastEditTime: 2024-09-18 20:00:08
+ * @FilePath: \storybook\src\components\Card\IconCard1.vue
  * @Description: 指标卡片
 -->
 <script setup lang="ts">
@@ -13,6 +13,10 @@ defineProps({
   icon: {
     type: String,
     default: 'mo'
+  },
+  iconColor: {
+    type: String,
+    default: '#45a2ff '
   }
 })
 </script>
@@ -56,18 +60,19 @@ defineProps({
       <span
         class="iconfont absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl"
         :class="'icon-' + icon"
+        :style="{ color: iconColor }"
       />
     </div>
 
     <div>
-      <div>
+      <div class="text-zx-2">
         <slot>
           {{ label }}
         </slot>
       </div>
       <div>
         <span class="mr-1 text-xl font-bold text-zx-1">{{ num }}</span>
-        <span>{{ unit }}</span>
+        <span class="text-zx-2">{{ unit }}</span>
       </div>
     </div>
   </div>

@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-03-01 10:21:13
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 10:13:53
+ * @LastEditTime: 2024-09-18 13:56:16
  * @FilePath: \storybook\src\components\Card\DataCard.vue
  * @Description: 组件 - 指标卡片
 -->
@@ -29,11 +29,11 @@ defineProps({
       <span class="mr-2 font-bold text-zx-1" :class="[num2 ? 'text-2xl' : 'text-3xl']">{{
         num
       }}</span>
-      <span>{{ unit }}</span>
+      <span class="text-zx-1">{{ unit }}</span>
     </div>
     <div v-if="num2">
       <span class="mr-2 text-2xl font-bold text-zx-1">{{ num2 }}</span>
-      <span>{{ unit2 }}</span>
+      <span class="text-zx-1">{{ unit2 }}</span>
     </div>
   </div>
 </template>

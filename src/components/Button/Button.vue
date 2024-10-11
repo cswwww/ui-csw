@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-06 19:25:56
+ * @LastEditTime: 2024-10-11 10:53:59
  * @FilePath: \storybook\src\components\Button\Button.vue
  * @Description: 组件 - 按钮
 -->
@@ -35,22 +35,22 @@ const classes = computed(() => ({
 
 <style scoped>
 .zx-button {
-  @apply flex w-fit cursor-pointer select-none items-center justify-center gap-1 rounded-sm border px-2 py-1 transition;
+  @apply flex w-fit cursor-pointer select-none items-center justify-center gap-1 rounded-sm px-2 py-1 transition;
 }
 /* 按钮类型样式 */
 .button--normal {
-  @apply border-zx-4 text-zx-3 hover:border-zx-5 hover:bg-zx-5 hover:text-zx-1;
+  @apply border border-zx-4 text-zx-3 hover:border-zx-5 hover:bg-zx-5 hover:text-zx-1;
 }
 .button--primary {
-  @apply border-zx-4 bg-zx-8 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
+  @apply border border-zx-4 bg-zx-8 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
 }
 .button--active {
-  @apply border-zx-4 bg-zx-5 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
+  @apply border border-zx-4 bg-zx-5 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
 }
 .button--text {
-  @apply border-none text-zx-3 hover:text-zx-4;
+  @apply text-zx-3 hover:text-zx-4;
 }
 .button--map {
-  @apply border-none bg-zx-8 text-zx-3 hover:bg-zx-5;
+  @apply bg-zx-8 text-zx-3 hover:bg-zx-5;
 }
 </style>
