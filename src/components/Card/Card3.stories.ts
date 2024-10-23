@@ -13,7 +13,7 @@ const meta = {
   component: Card3,
   tags: ['autodocs'],
   args: {},
-  render: (args) => ({
+  render: args => ({
     components: { Card3 },
     setup() {
       return { args }
@@ -22,13 +22,13 @@ const meta = {
     <card-3>
       <template #title>标题</template>
       <template #content>内容</template>
-    </card-3>`
-  })
+    </card-3>`,
+  }),
 } satisfies Meta<typeof Card3>
 
 export default meta
 type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
-  args: {}
+  args: {},
 }

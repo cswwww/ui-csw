@@ -1,4 +1,4 @@
-import { App } from 'vue'
+import type { App } from 'vue'
 // import { defineAsyncComponent } from 'vue'
 import '../style/main.css'
 
@@ -16,43 +16,43 @@ import '../style/main.css'
 
 // ! 组件
 import Button from './Button/Button.vue'
-import Loading from './Loading/Loading.vue'
-import LineTitle from './Title/LineTitle.vue'
 import Button1 from './Button/Button1.vue'
 import Button2 from './Button/Button2.vue'
-import DataCard from './Card/DataCard.vue'
-import TitleCard from './Card/TitleCard.vue'
-import IconCard1 from './Card/IconCard1.vue'
-import IconCard2 from './Card/IconCard2.vue'
-import Dialog1 from './Dialog/Dialog1.vue'
 import Card2 from './Card/Card2.vue'
 import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
+import DataCard from './Card/DataCard.vue'
+import IconCard1 from './Card/IconCard1.vue'
+import IconCard2 from './Card/IconCard2.vue'
+import TitleCard from './Card/TitleCard.vue'
+import Dialog1 from './Dialog/Dialog1.vue'
 import Header1 from './Header/Header1.vue'
-import Timeline from './Timeline/Timeline.vue'
 import Header2 from './Header/Header2.vue'
-
-export {
-  Button as zxButton,
-  Loading,
-  LineTitle,
-  Button1,
-  Button2,
-  DataCard,
-  TitleCard,
-  IconCard1,
-  IconCard2,
-  Dialog1,
-  Card2,
-  Card3,
-  Card4,
-  Timeline,
-  Header1,
-  Header2
-}
+import Loading from './Loading/Loading.vue'
+import Timeline from './Timeline/Timeline.vue'
+import LineTitle from './Title/LineTitle.vue'
 
 // ! 方法
 import createDialog from './Dialog/Dialog.ts'
+
+export {
+  Button as zxButton,
+  Button1,
+  Button2,
+  Card2,
+  Card3,
+  Card4,
+  DataCard,
+  Dialog1,
+  Header1,
+  Header2,
+  IconCard1,
+  IconCard2,
+  LineTitle,
+  Loading,
+  Timeline,
+  TitleCard,
+}
 
 export { createDialog }
 
@@ -75,5 +75,5 @@ export default {
     app.component('Timeline', Timeline)
     app.component('Header1', Header1)
     app.component('Header2', Header2)
-  }
+  },
 }

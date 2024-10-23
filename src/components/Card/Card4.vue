@@ -9,11 +9,15 @@
 <template>
   <div class="dialog-container">
     <div class="dialog-title">
-      <slot name="title"> 标题 </slot>
+      <slot name="title">
+        标题
+      </slot>
     </div>
 
     <div class="dialog-content">
-      <slot name="content">默认内容 </slot>
+      <slot name="content">
+        默认内容
+      </slot>
     </div>
   </div>
 </template>

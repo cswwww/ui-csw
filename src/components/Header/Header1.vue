@@ -6,9 +6,9 @@
  * @Description: 导航栏模板
 -->
 <script setup lang="ts">
+import navCenter from '../../assets/img/navCenter.svg'
 import navLeft from '../../assets/img/navLeft.svg'
 import navRight from '../../assets/img/navRight.svg'
-import navCenter from '../../assets/img/navCenter.svg'
 </script>
 
 <template>
@@ -20,7 +20,7 @@ import navCenter from '../../assets/img/navCenter.svg'
         class="pointer-events-none absolute right-0 top-9 -z-10 h-2 w-auto select-none object-cover"
         :src="navLeft"
         alt=""
-      />
+      >
       <slot name="left" />
     </div>
     <div class="w-[600px]">
@@ -28,11 +28,13 @@ import navCenter from '../../assets/img/navCenter.svg'
         class="pointer-events-none -z-10 h-full w-full select-none object-fill"
         :src="navCenter"
         alt=""
-      />
+      >
       <div
         class="pointer-events-none absolute left-1/2 top-2 -translate-x-1/2 select-none text-2xl font-semibold tracking-wider text-zx-1"
       >
-        <slot name="center"> 星空地智能巡检平台 </slot>
+        <slot name="center">
+          星空地智能巡检平台
+        </slot>
       </div>
     </div>
     <div class="relative flex-1">
@@ -40,7 +42,7 @@ import navCenter from '../../assets/img/navCenter.svg'
         class="pointer-events-none absolute left-0 top-9 -z-10 h-2 w-auto select-none object-cover"
         :src="navRight"
         alt=""
-      />
+      >
       <slot name="right" />
     </div>
   </div>

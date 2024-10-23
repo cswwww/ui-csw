@@ -13,8 +13,8 @@ const meta = {
   component: Title2,
   tags: ['autodocs'],
   args: {
-    mainTitle: '标题'
-  }
+    mainTitle: '标题',
+  },
 } satisfies Meta<typeof Title2>
 
 export default meta

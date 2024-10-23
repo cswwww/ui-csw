@@ -13,20 +13,20 @@ const props = withDefaults(
     type?: 'normal' | 'primary' | 'active' | 'text' | 'map'
   }>(),
   {
-    type: 'normal'
-  }
+    type: 'normal',
+  },
 )
 
 // 动态样式属性
 const classes = computed(() => ({
   'zx-button': true,
-  [`button--${props.type}`]: true
+  [`button--${props.type}`]: true,
 }))
 </script>
 
 <template>
   <div :class="classes">
-    <span v-if="icon" :class="['icon-' + icon, 'iconfont']" />
+    <span v-if="icon" class="iconfont" :class="[`icon-${icon}`]" />
     <span v-if="$slots.default || label">
       <slot>{{ label }}</slot>
     </span>

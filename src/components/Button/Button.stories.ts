@@ -15,10 +15,10 @@ const meta = {
   argTypes: {
     type: {
       control: 'select',
-      options: ['normal', 'primary', 'active', 'text', 'map']
-    }
+      options: ['normal', 'primary', 'active', 'text', 'map'],
+    },
   },
-  args: {}
+  args: {},
 } satisfies Meta<typeof Button>
 
 export default meta
@@ -27,6 +27,6 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     label: 'Button',
-    type: 'primary'
-  }
+    type: 'primary',
+  },
 }

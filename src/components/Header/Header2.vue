@@ -15,13 +15,15 @@ import headerBg from '../../assets/img/header2.svg'
       class="pointer-events-none absolute left-0 top-0 h-16 w-full select-none object-cover"
       :src="headerBg"
       alt=""
-    />
+    >
     <div class="relative flex-1">
       <slot name="left" />
     </div>
     <div class="w-[700px]">
       <div class="tech-art-title">
-        <slot name="center"> 空天地隧智能巡检系统 </slot>
+        <slot name="center">
+          空天地隧智能巡检系统
+        </slot>
       </div>
     </div>
     <div class="relative flex-1">
@@ -29,6 +31,7 @@ import headerBg from '../../assets/img/header2.svg'
     </div>
   </div>
 </template>
+
 <style scoped>
 .tech-art-title {
   @apply pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none text-2xl font-semibold text-zx-1 drop-shadow-lg;

@@ -13,13 +13,13 @@ const meta = {
   component: DataCard,
   tags: ['autodocs'],
   args: {},
-  render: (args) => ({
+  render: args => ({
     components: { DataCard },
     setup() {
       return { args }
     },
-    template: '<DataCard class="w-72" v-bind="args" />'
-  })
+    template: '<DataCard class="w-72" v-bind="args" />',
+  }),
 } satisfies Meta<typeof DataCard>
 
 export default meta
@@ -31,8 +31,8 @@ export const Primary: Story = {
     num: 1,
     unit: 'times',
     num2: 0,
-    unit2: ''
-  }
+    unit2: '',
+  },
 }
 
 export const Second: Story = {
@@ -41,6 +41,6 @@ export const Second: Story = {
     num: 1,
     unit: 'times',
     num2: 2,
-    unit2: 'times'
-  }
+    unit2: 'times',
+  },
 }

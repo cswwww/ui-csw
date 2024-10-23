@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite'
+import { resolve } from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite' // 自动导入
 import Components from 'unplugin-vue-components/vite' // 自动导入组件
-import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [
@@ -14,31 +14,31 @@ export default defineConfig({
       eslintrc: {
         enabled: true,
         filepath: './.eslintrc-auto-import.json',
-        globalsPropValue: true
-      }
+        globalsPropValue: true,
+      },
     }),
     Components({
-      dirs: ['src/components', 'src/components/**', 'src/layouts', 'src/layouts/**']
-    })
+      dirs: ['src/components', 'src/components/**', 'src/layouts', 'src/layouts/**'],
+    }),
   ],
   build: {
     outDir: 'es', // 打包后文件目录
     minify: false, // 压缩
     rollupOptions: {
       external: ['vue'], // 忽略打包vue文件
-      //input: ["index.ts"],
+      // input: ["index.ts"],
       output: {
         globals: {
-          vue: 'Vue'
+          vue: 'Vue',
         },
-        dir: 'dist'
-      }
+        dir: 'dist',
+      },
     },
     lib: {
       entry: resolve(__dirname, './src/components/index.ts'),
       name: 'main',
-      fileName: 'main'
+      fileName: 'main',
       // formats: ['es', 'umd', 'cjs']
-    }
-  }
+    },
+  },
 })

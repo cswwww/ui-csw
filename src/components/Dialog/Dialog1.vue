@@ -13,8 +13,8 @@ withDefaults(
   }>(),
   {
     show: true,
-    close: (fun: Function) => fun()
-  }
+    close: (fun: Function) => fun(),
+  },
 )
 
 // 操作：关闭弹窗
@@ -22,7 +22,7 @@ const emit = defineEmits<{
   'update:show': [show: boolean]
 }>()
 
-const handleClose = () => {
+function handleClose() {
   // ! 需搭配 v-model:show 来使用
   emit('update:show', false)
 }
@@ -31,17 +31,21 @@ const handleClose = () => {
 <template>
   <div v-if="show" class="dialog-container">
     <div class="dialog-title">
-      <slot name="title"> 标题 </slot>
+      <slot name="title">
+        标题
+      </slot>
       <span title="关闭" class="clickable-icon" @click="close(handleClose)">×</span>
     </div>
 
     <div class="dialog-content">
-      <slot name="content">默认内容 </slot>
+      <slot name="content">
+        默认内容
+      </slot>
     </div>
   </div>
 
   <!-- 遮罩层 -->
-  <div v-if="show" @click="close(handleClose)" class="dialog-mask" />
+  <div v-if="show" class="dialog-mask" @click="close(handleClose)" />
 </template>
 
 <style scoped>

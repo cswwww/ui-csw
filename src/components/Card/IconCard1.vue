@@ -12,14 +12,15 @@ defineProps({
   label: String,
   icon: {
     type: String,
-    default: 'mo'
+    default: 'mo',
   },
   iconColor: {
     type: String,
-    default: '#45a2ff '
-  }
+    default: '#45a2ff ',
+  },
 })
 </script>
+
 <template>
   <div class="flex h-12 items-center gap-2">
     <div class="relative">
@@ -59,7 +60,7 @@ defineProps({
       </svg>
       <span
         class="iconfont absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl"
-        :class="'icon-' + icon"
+        :class="`icon-${icon}`"
         :style="{ color: iconColor }"
       />
     </div>

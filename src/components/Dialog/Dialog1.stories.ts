@@ -1,23 +1,23 @@
 /*
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-29 13:41:12
- * @FilePath: \storybook\src\components\Dialog\Dialog1.stories.ts
+ * @LastEditTime: 2024-10-23 19:18:27
+ * @FilePath: \component-csw\src\components\Dialog\Dialog1.stories.ts
  * @Description: 组件 - 对话框 - 模板1
  */
 import type { Meta, StoryObj } from '@storybook/vue3'
 import { fn } from '@storybook/test'
 import Dialog1 from './Dialog1.vue'
 
-const meta = {
+const meta: Meta<typeof Dialog1> = {
   title: 'Simple/Dialog1',
   component: Dialog1,
   tags: ['autodocs'],
   args: {
-    show: true,
-    'onUpdate:show': fn()
+    'show': true,
+    'onUpdate:show': fn(),
   },
-  render: (args) => ({
+  render: args => ({
     components: { Dialog1 },
     setup() {
       return { args }
@@ -27,8 +27,8 @@ const meta = {
       <template #content>
         Content, Content Content, Content Content Content.
       </template>
-    </dialog-1>`
-  })
+    </dialog-1>`,
+  }),
 } satisfies Meta<typeof Dialog1>
 
 export default meta

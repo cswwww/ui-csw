@@ -13,13 +13,13 @@ const meta = {
   component: Button2,
   tags: ['autodocs'],
   args: {},
-  render: (args) => ({
+  render: args => ({
     components: { Button2 },
     setup() {
       return { args }
     },
-    template: '<Button2 v-bind="args" />'
-  })
+    template: '<Button2 v-bind="args" />',
+  }),
 } satisfies Meta<typeof Button2>
 
 export default meta
@@ -27,12 +27,12 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    label: 'Button'
-  }
+    label: 'Button',
+  },
 }
 
 export const Icon: Story = {
   args: {
     label: 'Icon',
-  }
+  },
 }

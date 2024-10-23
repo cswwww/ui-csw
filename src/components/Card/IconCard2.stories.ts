@@ -12,7 +12,7 @@ const meta = {
   title: 'Card/IconCard2',
   component: IconCard2,
   tags: ['autodocs'],
-  args: {}
+  args: {},
 } satisfies Meta<typeof IconCard2>
 
 export default meta
@@ -23,6 +23,6 @@ export const Primary: Story = {
     num: 1,
     icon: 'shuijin',
     unit: '台',
-    label: '水浸装置'
-  }
+    label: '水浸装置',
+  },
 }

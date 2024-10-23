@@ -12,7 +12,7 @@ import Timeline from './Timeline.vue'
 const meta = {
   title: 'Simple/Timeline',
   component: Timeline,
-  tags: ['autodocs']
+  tags: ['autodocs'],
 } satisfies Meta<typeof Timeline>
 
 export default meta
@@ -20,32 +20,32 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    data: [
+    'data': [
       {
         date: '1',
-        time: '2020-10-10'
+        time: '2020-10-10',
       },
       {
         date: '2',
-        time: '2020-10-11'
+        time: '2020-10-11',
       },
       {
         date: '3',
-        time: '2020-10-12'
+        time: '2020-10-12',
       },
       {
         date: '4',
-        time: '2020-10-13'
+        time: '2020-10-13',
       },
       {
         date: '5',
-        time: '2020-10-14'
-      }
+        time: '2020-10-14',
+      },
     ],
-    interval: 500,
-    label: 'time',
+    'interval': 500,
+    'label': 'time',
     'onClick:tick': fn(),
     'onAnimate:stop': fn(),
-    'onAnimate:tick': fn()
-  }
+    'onAnimate:tick': fn(),
+  },
 }

@@ -6,7 +6,8 @@
  * @Description: 函数式调用 - 通用彈窗组件
  * @Notice: 建议搭配组件使用 - Dialog1.vue
  */
-import { Component, createApp, VNode } from 'vue'
+import type { Component, VNode } from 'vue'
+import { createApp } from 'vue'
 
 interface Options {
   component: Component | VNode
@@ -14,7 +15,7 @@ interface Options {
   [propName: string]: any
 }
 
-const createDialog = (option: Options): void => {
+function createDialog(option: Options): void {
   const { component, ...props } = option
 
   const mountNode: HTMLElement = document.createElement('div')
@@ -24,7 +25,7 @@ const createDialog = (option: Options): void => {
       // 关闭弹窗
       Instance.unmount()
       document.body.removeChild(mountNode)
-    }
+    },
   })
 
   document.body.appendChild(mountNode)
