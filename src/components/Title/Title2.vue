@@ -14,7 +14,7 @@ withDefaults(
     secondTitle?: string
     thirdTitle?: string
   }>(),
-  {}
+  {},
 )
 </script>
 
@@ -22,13 +22,13 @@ withDefaults(
   <div
     class="pointer-events-none absolute left-1/2 top-10 z-10 flex w-80 -translate-x-1/2 select-none flex-col items-center p-6"
   >
-    <img :src="midTitle" class="absolute" />
+    <img :src="midTitle" class="absolute">
     <div class="text-nowrap text-2xl text-zx-3">
       {{ mainTitle }}
       <span v-if="secondTitle">· {{ secondTitle }}</span>
     </div>
 
-    <div class="text-nowrap text-lg text-zx-1" v-if="thirdTitle">
+    <div v-if="thirdTitle" class="text-nowrap text-lg text-zx-1">
       {{ thirdTitle }}
     </div>
   </div>

@@ -12,14 +12,15 @@ defineProps({
   label: String,
   icon: {
     type: String,
-    default: 'mo'
+    default: 'mo',
   },
   iconColor: {
     type: String,
-    default: '#45a2ff '
-  }
+    default: '#45a2ff ',
+  },
 })
 </script>
+
 <template>
   <div class="flex h-12 items-center gap-2">
     <div class="relative">
@@ -37,11 +38,11 @@ defineProps({
             <rect x="0" y="0" width="43" height="50" rx="0" />
           </clipPath>
           <radialGradient
+            id="master_svg1_3_001"
             cx="0"
             cy="0"
             r="1"
             gradientUnits="userSpaceOnUse"
-            id="master_svg1_3_001"
             gradientTransform="translate(21.183575063943863 25.1895569562912) rotate(90) scale(19.78540551662445 17.1829618722819)"
           >
             <stop offset="0.21564899943768978%" stop-color="#1FC6FF" stop-opacity="1" />
@@ -82,7 +83,7 @@ defineProps({
       </svg>
       <span
         class="iconfont absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl text-zx-4"
-        :class="'icon-' + icon"
+        :class="`icon-${icon}`"
         :style="{ color: iconColor }"
       />
     </div>

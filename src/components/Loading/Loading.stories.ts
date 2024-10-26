@@ -11,7 +11,7 @@ import Loading from './Loading.vue'
 const meta = {
   title: 'Simple/Loading',
   component: Loading,
-  tags: ['autodocs']
+  tags: ['autodocs'],
 } satisfies Meta<typeof Loading>
 
 export default meta

@@ -21,7 +21,7 @@ const meta = {
       control: 'boolean'
     }
   },
-  args: {}
+  args: {},
 } satisfies Meta<typeof Button>
 
 export default meta

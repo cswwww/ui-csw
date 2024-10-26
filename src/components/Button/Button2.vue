@@ -11,14 +11,17 @@ withDefaults(
     label?: string
   }>(),
   {
-    label: '按钮'
-  }
+    label: '按钮',
+  },
 )
 </script>
 
 <template>
-  <div class="button2">{{ label }}</div>
+  <div class="button2">
+    {{ label }}
+  </div>
 </template>
+
 <style scoped>
 .button2 {
   @apply flex h-[32px] w-[65px] cursor-pointer select-none items-center justify-center text-zx-3 transition hover:bg-zx-1 hover:bg-opacity-20;

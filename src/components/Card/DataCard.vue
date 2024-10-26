@@ -11,9 +11,10 @@ defineProps({
   num: [Number, String],
   unit: String,
   num2: [Number, String],
-  unit2: String
+  unit2: String,
 })
 </script>
+
 <template>
   <div
     class="flex items-center justify-between rounded-lg border border-zx-5 bg-zx-7 bg-opacity-60 p-2"

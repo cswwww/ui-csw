@@ -14,8 +14,8 @@ const props = withDefaults(
   }>(),
   {
     interval: 500,
-    label: 'time'
-  }
+    label: 'time',
+  },
 )
 const emit = defineEmits<{
   'click:tick': [tickData: any, index: number] // 点击时间轴
@@ -24,12 +24,12 @@ const emit = defineEmits<{
 }>()
 
 let timerInterval: ReturnType<typeof setInterval> // 定时器
-const currentTick = ref<number>(NaN) // 当前刻度
-const hoverTick = ref<number>(NaN) // 鼠标悬停刻度
+const currentTick = ref<number>(Number.NaN) // 当前刻度
+const hoverTick = ref<number>(Number.NaN) // 鼠标悬停刻度
 const isPlaying = ref<boolean>(false) // 是否正在播放
 
 // 操作：点击时间轴
-const clickTimeLine = (index: number) => {
+function clickTimeLine(index: number) {
   currentTick.value = index // 更新当前刻度
   clearInterval(timerInterval) // 清除定时器
   isPlaying.value = false // 停止播放
@@ -39,7 +39,7 @@ const clickTimeLine = (index: number) => {
 }
 
 // 操作：播放
-const playTimeLine = () => {
+function playTimeLine() {
   const playStop = () => {
     // 停止播放
     emit('animate:stop', currentTick.value)
@@ -52,7 +52,8 @@ const playTimeLine = () => {
     if (Number.isNaN(currentTick.value)) {
       currentTick.value = 0
       emit('animate:tick', props.data[currentTick.value], currentTick.value)
-    } else if (currentTick.value >= props.data.length - 1) {
+    }
+    else if (currentTick.value >= props.data.length - 1) {
       currentTick.value = 0
     }
 
@@ -65,7 +66,8 @@ const playTimeLine = () => {
       currentTick.value += 1
       emit('animate:tick', props.data[currentTick.value], currentTick.value)
     }, props.interval)
-  } else {
+  }
+  else {
     playStop()
   }
 }
@@ -73,13 +75,13 @@ const playTimeLine = () => {
 watch(
   () => props.data, // 数据变化，重置当前刻度
   () => {
-    currentTick.value = NaN
-  }
+    currentTick.value = Number.NaN
+  },
 )
 
 defineExpose({
   currentTick,
-  isPlaying
+  isPlaying,
 })
 </script>
 
@@ -87,8 +89,8 @@ defineExpose({
   <div class="flex h-auto w-full items-center gap-2">
     <!-- 播放按钮 -->
     <div
-      @click="playTimeLine"
       class="flex-center size-8 flex-shrink-0 cursor-pointer overflow-hidden rounded-full bg-zx-3 shadow-md"
+      @click="playTimeLine"
     >
       <svg v-if="!isPlaying" viewBox="0 0 1024 1024" width="200" height="200">
         <path
@@ -118,23 +120,23 @@ defineExpose({
         v-for="(item, index) in data"
         :key="item"
         :class="index === currentTick ? 'bg-zx-3' : 'bg-zx-8'"
+        class="relative h-4 w-full cursor-pointer rounded-sm bg-opacity-70 text-zx-1"
         @click="clickTimeLine(index)"
         @mouseenter="() => (hoverTick = index)"
         @mouseleave="() => (hoverTick = NaN)"
-        class="relative h-4 w-full cursor-pointer rounded-sm bg-opacity-70 text-zx-1"
       >
         <Transition>
           <div
-            class="absolute bottom-full left-1/2 w-max -translate-x-1/2 text-center text-zx-1 transition-opacity"
             v-if="index === hoverTick && index !== currentTick"
+            class="absolute bottom-full left-1/2 w-max -translate-x-1/2 text-center text-zx-1 transition-opacity"
           >
             {{ item[label] || item }}
           </div>
         </Transition>
 
         <div
-          class="absolute left-1/2 top-full w-max -translate-x-1/2 cursor-auto select-none text-center text-zx-3 transition-opacity"
           v-if="index === currentTick"
+          class="absolute left-1/2 top-full w-max -translate-x-1/2 cursor-auto select-none text-center text-zx-3 transition-opacity"
         >
           {{ item[label] || item }}
         </div>
@@ -142,6 +144,7 @@ defineExpose({
     </div>
   </div>
 </template>
+
 <style scoped>
 .v-enter-active,
 .v-leave-active {

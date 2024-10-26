@@ -12,9 +12,9 @@ const config: StorybookConfig = {
 
   framework: {
     name: '@storybook/vue3-vite',
-    options: {}
+    options: {},
   },
 
-  docs: {}
+  docs: {},
 }
 export default config

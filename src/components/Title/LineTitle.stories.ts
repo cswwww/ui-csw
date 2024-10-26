@@ -13,14 +13,14 @@ const meta = {
   component: LineTitle,
   tags: ['autodocs'],
   args: {
-    label: '标题'
+    label: '标题',
   },
   // render: (args) => ({
   //   components: { LineTitle },
   //   setup() {
   //     return { args }
   //   },
-  //   template: '<LineTitle>123</LineTitle>' 
+  //   template: '<LineTitle>123</LineTitle>'
   // })
 } satisfies Meta<typeof LineTitle>
 

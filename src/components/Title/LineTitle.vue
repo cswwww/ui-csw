@@ -10,7 +10,7 @@ withDefaults(
   defineProps<{
     label?: string
   }>(),
-  {}
+  {},
 )
 </script>
 

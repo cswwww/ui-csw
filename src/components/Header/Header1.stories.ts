@@ -13,7 +13,7 @@ const meta = {
   component: Header1,
   tags: ['autodocs'],
   args: {},
-  render: (args) => ({
+  render: args => ({
     components: { Header1 },
     setup() {
       return { args }
@@ -26,8 +26,8 @@ const meta = {
     <template #right>
         <div style="color: white">右侧插槽</div>
       </template>
-    </Header1>`
-  })
+    </Header1>`,
+  }),
 } satisfies Meta<typeof Header1>
 
 export default meta

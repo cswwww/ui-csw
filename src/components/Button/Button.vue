@@ -29,7 +29,7 @@ const classes = computed(() => ({
 
 <template>
   <div :class="classes">
-    <span v-if="icon" :class="['icon-' + icon, 'iconfont']" />
+    <span v-if="icon" class="iconfont" :class="[`icon-${icon}`]" />
     <span v-if="$slots.default || label">
       <slot>{{ label }}</slot>
     </span>
