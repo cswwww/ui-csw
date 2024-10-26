@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 09:28:10
+ * @LastEditTime: 2024-10-12 15:13:14
  * @FilePath: \storybook\src\components\Button\Button.stories.ts
  * @Description: 组件 - 按钮
  */
@@ -16,6 +16,9 @@ const meta = {
     type: {
       control: 'select',
       options: ['normal', 'primary', 'active', 'text', 'map']
+    },
+    disabled: {
+      control: 'boolean'
     }
   },
   args: {}
@@ -27,6 +30,7 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     label: 'Button',
-    type: 'primary'
+    type: 'primary',
+    disabled: false
   }
 }

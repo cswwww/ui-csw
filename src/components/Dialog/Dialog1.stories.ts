@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-29 13:41:12
+ * @LastEditTime: 2024-10-23 14:25:14
  * @FilePath: \storybook\src\components\Dialog\Dialog1.stories.ts
  * @Description: 组件 - 对话框 - 模板1
  */
@@ -9,7 +9,7 @@ import type { Meta, StoryObj } from '@storybook/vue3'
 import { fn } from '@storybook/test'
 import Dialog1 from './Dialog1.vue'
 
-const meta = {
+const meta: Meta = {
   title: 'Simple/Dialog1',
   component: Dialog1,
   tags: ['autodocs'],

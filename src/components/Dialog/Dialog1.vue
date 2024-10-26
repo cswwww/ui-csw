@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-20 17:13:07
+ * @LastEditTime: 2024-10-12 17:26:12
  * @FilePath: \storybook\src\components\Dialog\Dialog1.vue
  * @Description: 弹出窗 - 模板1
 -->
@@ -29,19 +29,19 @@ const handleClose = () => {
 </script>
 
 <template>
+  <!-- 遮罩层 -->
+  <div v-if="show" @click="close(handleClose)" class="dialog-mask" />
+
   <div v-if="show" class="dialog-container">
     <div class="dialog-title">
       <slot name="title"> 标题 </slot>
-      <span title="关闭" class="clickable-icon" @click="close(handleClose)">×</span>
+      <span title="关闭" class="clickable-icon" style="font-size: 1.6rem" @click="close(handleClose)">×</span>
     </div>
 
     <div class="dialog-content">
       <slot name="content">默认内容 </slot>
     </div>
   </div>
-
-  <!-- 遮罩层 -->
-  <div v-if="show" @click="close(handleClose)" class="dialog-mask" />
 </template>
 
 <style scoped>
@@ -55,7 +55,7 @@ const handleClose = () => {
   @apply overflow-y-auto overflow-x-hidden p-4;
 }
 .dialog-mask {
-  @apply pointer-events-auto fixed inset-0 z-40 h-full w-full bg-zx-9 bg-opacity-60;
+  @apply pointer-events-auto fixed inset-0 z-50 h-full w-full bg-zx-9 bg-opacity-60;
 }
 
 .dialog-container::before {

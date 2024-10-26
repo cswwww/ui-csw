@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-12-20 15:29:51
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-09-19 14:05:26
+ * @LastEditTime: 2024-10-11 14:33:40
  * @FilePath: \storybook\src\components\Card\Card3.vue
  * @Description: 组件 - 卡片
 -->
@@ -33,7 +33,7 @@
 
 <style scoped>
 .title-bg {
-  @apply relative box-border flex items-center p-1;
+  @apply relative box-border flex h-10 items-center p-1;
   background: linear-gradient(90deg, rgba(31, 180, 255, 0.12) 0%, rgba(31, 180, 255, 0) 100%);
 }
 
