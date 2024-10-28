@@ -1,4 +1,3 @@
-import type { App } from 'vue'
 // import { defineAsyncComponent } from 'vue'
 import '../style/main.css'
 
@@ -29,6 +28,7 @@ import Dialog1 from './Dialog/Dialog1.vue'
 import Header1 from './Header/Header1.vue'
 import Header2 from './Header/Header2.vue'
 import Loading from './Loading/Loading.vue'
+import Legend1 from './Map/Legend1.vue'
 import Timeline from './Timeline/Timeline.vue'
 import LineTitle from './Title/LineTitle.vue'
 
@@ -48,6 +48,7 @@ export {
   Header2,
   IconCard1,
   IconCard2,
+  Legend1,
   LineTitle,
   Loading,
   Timeline,
@@ -58,7 +59,7 @@ export { createDialog }
 
 // ! 手动引用组件
 export default {
-  install(app: App) {
+  install(app) {
     app.component('zxButton', Button)
     app.component('zxLoading', Loading)
     app.component('LineTitle', LineTitle)
@@ -75,5 +76,6 @@ export default {
     app.component('Timeline', Timeline)
     app.component('Header1', Header1)
     app.component('Header2', Header2)
+    app.component('Legend1', Legend1)
   },
 }

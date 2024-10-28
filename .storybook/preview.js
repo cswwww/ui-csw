@@ -1,7 +1,7 @@
-import type { Preview } from '@storybook/vue3'
+/** @type { import('@storybook/vue3').Preview } */
 import '../src/style/main.css'
 
-const preview: Preview = {
+const preview = {
   parameters: {
     controls: {
       matchers: {
@@ -10,7 +10,6 @@ const preview: Preview = {
       },
     },
   },
-
   tags: ['autodocs'],
 }
 
