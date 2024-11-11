@@ -1,15 +1,15 @@
 /*
  * @Date: 2024-08-05 11:08:11
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-29 13:40:42
- * @FilePath: \storybook\src\components\Header\Header1.stories.ts
+ * @LastEditTime: 2024-11-11 11:44:57
+ * @FilePath: \component-csw\src\components\Header\Header1.stories.ts
  * @Description: 组件 - 加载动画
  */
 import type { Meta, StoryObj } from '@storybook/vue3'
 import Header1 from './Header1.vue'
 
 const meta = {
-  title: 'Simple/Header1',
+  title: 'Header/Header1',
   component: Header1,
   tags: ['autodocs'],
   args: {},

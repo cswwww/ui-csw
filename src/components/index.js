@@ -27,6 +27,7 @@ import TitleCard from './Card/TitleCard.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
 import Header1 from './Header/Header1.vue'
 import Header2 from './Header/Header2.vue'
+import Header3 from './Header/Header3.vue'
 import Loading from './Loading/Loading.vue'
 import Legend1 from './Map/Legend1.vue'
 import Timeline from './Timeline/Timeline.vue'
@@ -46,6 +47,7 @@ export {
   Dialog1,
   Header1,
   Header2,
+  Header3,
   IconCard1,
   IconCard2,
   Legend1,
@@ -76,6 +78,7 @@ export default {
     app.component('Timeline', Timeline)
     app.component('Header1', Header1)
     app.component('Header2', Header2)
+    app.component('Header3', Header3)
     app.component('Legend1', Legend1)
   },
 }
