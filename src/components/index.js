@@ -21,6 +21,7 @@ import Card2 from './Card/Card2.vue'
 import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
 import DataCard from './Card/DataCard.vue'
+import DataCard2 from './Card/DataCard2.vue'
 import IconCard1 from './Card/IconCard1.vue'
 import IconCard2 from './Card/IconCard2.vue'
 import TitleCard from './Card/TitleCard.vue'
@@ -73,6 +74,7 @@ export default {
     app.component('IconCard2', IconCard2)
     app.component('Dialog1', Dialog1)
     app.component('Card2', Card2)
+    app.component('DataCard2', DataCard2)
     app.component('Card3', Card3)
     app.component('Card4', Card4)
     app.component('Timeline', Timeline)
