@@ -1,8 +1,8 @@
 /*
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-11-15 16:19:46
- * @FilePath: \component-csw\src\components\Card\DataCard2.stories.ts
+ * @LastEditTime: 2024-12-13 10:27:43
+ * @FilePath: \ui-csw\src\components\Card\DataCard2.stories.ts
  * @Description: 组件 - 按钮 - 1
  */
 import type { Meta, StoryObj } from '@storybook/vue3'
@@ -33,10 +33,3 @@ export const Primary: Story = {
   },
 }
 
-export const Second: Story = {
-  args: {
-    label: 'Label',
-    num: 1,
-    unit: 'times',
-  },
-}

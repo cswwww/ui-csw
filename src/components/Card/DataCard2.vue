@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-01 10:21:13
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-11-15 16:19:35
- * @FilePath: \component-csw\src\components\Card\DataCard2.vue
+ * @LastEditTime: 2024-12-11 11:28:12
+ * @FilePath: \ui-csw\src\components\Card\DataCard2.vue
  * @Description: 组件 - 指标卡片
 -->
 <script setup lang="ts">
@@ -33,7 +33,7 @@ defineProps({
 .data-card2 {
   @apply flex aspect-[292/125] items-center justify-between p-2;
   background-image: url('../../assets/img/dataCard2.svg');
-  background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-position: left;
 }
 </style>

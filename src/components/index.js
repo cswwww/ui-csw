@@ -17,6 +17,7 @@ import '../style/main.css'
 import Button from './Button/Button.vue'
 import Button1 from './Button/Button1.vue'
 import Button2 from './Button/Button2.vue'
+import Border1 from './Border/Border1.vue'
 import Card2 from './Card/Card2.vue'
 import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
@@ -41,10 +42,12 @@ export {
   Button as zxButton,
   Button1,
   Button2,
+  Border1,
   Card2,
   Card3,
   Card4,
   DataCard,
+  DataCard2,
   Dialog1,
   Header1,
   Header2,
@@ -68,6 +71,7 @@ export default {
     app.component('LineTitle', LineTitle)
     app.component('Button1', Button1)
     app.component('Button2', Button2)
+    app.component('Border1', Border1)
     app.component('DataCard', DataCard)
     app.component('TitleCard', TitleCard)
     app.component('IconCard1', IconCard1)

@@ -1,16 +1,13 @@
 <script setup lang="ts">
-import Dialog1 from './components/Dialog/Dialog1.vue'
-import { createDialog } from './components/index.ts'
-
-onMounted(() => {
-  createDialog({
-    component: Dialog1,
-  })
-})
+import Border1 from './components/Border/Border1.vue'
 </script>
 
 <template>
   <div>
-    <zx-loading />
+    <Border1>
+      <div class="w-60 h-32 text-zx-1">
+        1234
+      </div>
+    </Border1>
   </div>
 </template>
