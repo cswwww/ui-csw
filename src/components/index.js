@@ -21,6 +21,7 @@ import Border1 from './Border/Border1.vue'
 import Card2 from './Card/Card2.vue'
 import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
+import Card5 from './Card/Card5.vue'
 import DataCard from './Card/DataCard.vue'
 import DataCard2 from './Card/DataCard2.vue'
 import IconCard1 from './Card/IconCard1.vue'
@@ -46,6 +47,7 @@ export {
   Card2,
   Card3,
   Card4,
+  Card5,
   DataCard,
   DataCard2,
   Dialog1,
@@ -81,6 +83,7 @@ export default {
     app.component('DataCard2', DataCard2)
     app.component('Card3', Card3)
     app.component('Card4', Card4)
+    app.component('Card5', Card5)
     app.component('Timeline', Timeline)
     app.component('Header1', Header1)
     app.component('Header2', Header2)
