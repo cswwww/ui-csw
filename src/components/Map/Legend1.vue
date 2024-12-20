@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-01 11:00:28
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-28 15:41:06
- * @FilePath: \component-csw\src\components\Map\Legend.vue
+ * @LastEditTime: 2024-12-17 17:09:15
+ * @FilePath: \ui-csw\src\components\Map\Legend1.vue
  * @Description: 地图 - 图例
 -->
 
@@ -61,15 +61,17 @@ defineExpose({
   <div class="pointer-events-auto w-56 rounded-md bg-zx-8 bg-opacity-70 p-2">
     <!-- 标题栏 -->
     <div class="mb-1 flex items-center justify-between">
-      <div class="pb-1 text-zx-1">
-        图例
-      </div>
-      <span
-        class="iconfont clickable-icon icon-shouqi"
-        :class="[showLegend ? 'rotate-180' : '']"
-        :title="showLegend ? '收起图例' : '展开图例'"
-        @click="showLegend = !showLegend"
-      />
+      <slot name="title">
+        <div class="pb-1 text-zx-1">
+          图例
+        </div>
+        <span
+          class="iconfont clickable-icon icon-shouqi"
+          :class="[showLegend ? 'rotate-180' : '']"
+          :title="showLegend ? '收起图例' : '展开图例'"
+          @click="showLegend = !showLegend"
+        />
+      </slot>
     </div>
 
     <!-- 图例内容 -->

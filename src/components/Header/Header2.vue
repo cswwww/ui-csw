@@ -1,8 +1,8 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-09-29 10:41:35
- * @FilePath: \storybook\src\components\Header\Header2.vue
+ * @LastEditTime: 2024-12-20 16:17:36
+ * @FilePath: \ui-csw\src\components\Header\Header2.vue
  * @Description: 导航栏模板
 -->
 <script setup lang="ts">
@@ -19,7 +19,7 @@ import headerBg from '../../assets/img/header2.svg'
     <div class="relative flex-1">
       <slot name="left" />
     </div>
-    <div class="w-[700px]">
+    <div class="w-[37%] min-w-[700px]">
       <div class="tech-art-title">
         <slot name="center">
           空天地隧智能巡检系统

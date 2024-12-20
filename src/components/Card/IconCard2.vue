@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-01 10:21:13
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-09-18 20:02:48
- * @FilePath: \storybook\src\components\Card\IconCard2.vue
+ * @LastEditTime: 2024-12-19 09:18:58
+ * @FilePath: \ui-csw\src\components\Card\IconCard2.vue
  * @Description: 指标卡片
 -->
 <script setup lang="ts">
@@ -89,7 +89,7 @@ defineProps({
     </div>
 
     <div>
-      <div class="text-zx-2">
+      <div class="text-zx-2 text-nowrap">
         <slot>
           {{ label }}
         </slot>
