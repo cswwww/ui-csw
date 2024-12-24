@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-12 15:12:48
- * @FilePath: \storybook\src\components\Button\Button.vue
+ * @LastEditTime: 2024-12-23 15:41:15
+ * @FilePath: \ui-csw\src\components\Button\Button.vue
  * @Description: 组件 - 按钮
 -->
 <script lang="ts" setup>
@@ -51,7 +51,7 @@ const classes = computed(() => ({
   @apply border border-zx-4 bg-zx-5 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
 }
 .button--text {
-  @apply text-zx-3 hover:text-zx-4;
+  @apply text-zx-3 hover:text-zx-4 !p-0;
 }
 .button--map {
   @apply bg-zx-8 text-zx-3 hover:bg-zx-5;
