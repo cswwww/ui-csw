@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-24 16:28:45
+ * @LastEditTime: 2024-12-24 19:10:55
  * @FilePath: \ui-csw\src\components\Card\Card5.vue
  * @Description: 卡片 - 模板5
 -->
@@ -38,11 +38,11 @@
 }
 
 .dec-l {
-  @apply absolute border-[#4a9ae1] w-10 h-10;
+  @apply absolute -z-10 border-[#4a9ae1] w-10 h-10;
 }
 
 .dec-s {
-  @apply absolute border-[#7bb0df] w-5 h-5;
+  @apply absolute -z-10 border-[#7bb0df] w-5 h-5;
 }
 
 .dec-1 {

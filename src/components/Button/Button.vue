@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-08-02 14:22:08
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-23 15:41:15
+ * @LastEditTime: 2024-12-24 16:53:21
  * @FilePath: \ui-csw\src\components\Button\Button.vue
  * @Description: 组件 - 按钮
 -->
@@ -48,7 +48,7 @@ const classes = computed(() => ({
   @apply border border-zx-4 bg-zx-8 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
 }
 .button--active {
-  @apply border border-zx-4 bg-zx-5 text-zx-3 hover:border-zx-5 hover:bg-zx-5;
+  @apply border border-zx-4 bg-zx-5 text-zx-3 hover:border-zx-8 hover:bg-zx-8;
 }
 .button--text {
   @apply text-zx-3 hover:text-zx-4 !p-0;

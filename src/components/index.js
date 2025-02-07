@@ -35,6 +35,7 @@ import Loading from './Loading/Loading.vue'
 import Legend1 from './Map/Legend1.vue'
 import Timeline from './Timeline/Timeline.vue'
 import LineTitle from './Title/LineTitle.vue'
+import Carousel from './Carousel/Carousel.vue'
 
 // ! 方法
 import createDialog from './Dialog/Dialog.ts'
@@ -61,6 +62,7 @@ export {
   Loading,
   Timeline,
   TitleCard,
+  Carousel,
 }
 
 export { createDialog }
@@ -89,5 +91,6 @@ export default {
     app.component('Header2', Header2)
     app.component('Header3', Header3)
     app.component('Legend1', Legend1)
+    app.component('Carousel', Carousel)
   },
 }
