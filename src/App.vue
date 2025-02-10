@@ -9,4 +9,6 @@
       </template>
     </card-5>
   </div>
+
+  <zx-button>Click me</zx-button>
 </template>

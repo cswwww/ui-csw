@@ -1,9 +1,9 @@
 <!--
  * @Date: 2023-12-20 15:29:51
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 14:19:13
- * @FilePath: \storybook\src\components\Card\TitleCard.vue
- * @Description: 组件 - 卡片
+ * @LastEditTime: 2025-02-10 09:17:05
+ * @FilePath: \ui-csw\src\components\Card\Card1.vue
+ * @Description: 卡片 - 模板1
 -->
 <template>
   <div

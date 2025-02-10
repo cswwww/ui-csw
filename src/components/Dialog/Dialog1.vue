@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-12 17:26:12
- * @FilePath: \storybook\src\components\Dialog\Dialog1.vue
+ * @LastEditTime: 2025-02-10 09:37:10
+ * @FilePath: \ui-csw\src\components\Dialog\Dialog1.vue
  * @Description: 弹出窗 - 模板1
 -->
 <script setup lang="ts">
@@ -48,10 +48,10 @@ function handleClose() {
 
 <style scoped>
 .dialog-container {
-  @apply pointer-events-auto fixed left-1/2 top-1/2 z-50 flex max-h-[80vh] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border-2 border-[#00a1ff] bg-zx-8 bg-opacity-90 text-zx-2;
+  @apply pointer-events-auto fixed left-1/2 top-1/2 z-50 flex max-h-[80vh] -translate-x-1/2 -translate-y-1/2 flex-col rounded-lg border-(solid 2 [#00a1ff]) bg-zx-8 bg-opacity-90 text-zx-2;
 }
 .dialog-title {
-  @apply flex justify-between border-b border-zx-5 p-4 text-lg;
+  @apply flex justify-between border-(b 0 zx-5 solid) p-4 text-lg;
 }
 .dialog-content {
   @apply overflow-y-auto overflow-x-hidden p-4;

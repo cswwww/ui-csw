@@ -1,11 +1,11 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-20 16:17:36
+ * @LastEditTime: 2025-02-10 15:56:50
  * @FilePath: \ui-csw\src\components\Header\Header2.vue
  * @Description: 导航栏模板
 -->
-<script setup lang="ts">
+<script setup>
 import headerBg from '../../assets/img/header2.svg'
 </script>
 

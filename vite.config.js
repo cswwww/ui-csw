@@ -1,13 +1,13 @@
 import { resolve } from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
 import vue from '@vitejs/plugin-vue'
+import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [vue(), AutoImport({
-    // https://github.com/unplugin/unplugin-auto-import
-    imports: ['vue', 'vue-router'],
+  plugins: [vue(), UnoCSS(), AutoImport({
+    imports: ['vue'],
     eslintrc: {
       enabled: true,
       filepath: './.eslintrc-auto-import.json',

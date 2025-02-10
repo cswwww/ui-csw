@@ -1,11 +1,11 @@
 <!--
- * @Date: 2023-12-18 16:33:37
+ * @Date: 2024-12-02 15:49:26
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-11-11 14:40:37
- * @FilePath: \component-csw\src\components\Header\Header3.vue
+ * @LastEditTime: 2025-02-10 15:56:31
+ * @FilePath: \ui-csw\src\components\Header\Header3.vue
  * @Description: 导航栏模板
 -->
-<script setup lang="ts">
+<script setup>
 import navCenter from '../../assets/img/navCenter3.svg'
 </script>
 

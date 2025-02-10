@@ -1,12 +1,14 @@
 <!--
  * @Date: 2024-03-01 11:00:28
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-17 17:09:15
+ * @LastEditTime: 2025-02-10 16:09:01
  * @FilePath: \ui-csw\src\components\Map\Legend1.vue
  * @Description: 地图 - 图例
 -->
 
-<script  setup>
+<script setup>
+import { ref } from 'vue'
+
 const props = defineProps({
   legendGroup: {
     // 图例分组

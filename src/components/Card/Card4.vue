@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-08 11:55:25
- * @FilePath: \storybook\src\components\Card\Card4.vue
+ * @LastEditTime: 2025-02-09 22:14:37
+ * @FilePath: \ui-csw\src\components\Card\Card4.vue
  * @Description: 卡片 - 模板4
 -->
 
@@ -24,10 +24,10 @@
 
 <style scoped>
 .dialog-container {
-  @apply pointer-events-auto relative z-50 box-border flex h-full w-full flex-col rounded-lg border-2 border-[#00a1ff] bg-zx-8 bg-opacity-80 text-zx-2;
+  @apply pointer-events-auto relative z-50 box-border flex h-full w-full flex-col rounded-lg border-2 border-solid border-[#00a1ff] bg-zx-8 bg-opacity-80 text-zx-2;
 }
 .dialog-title {
-  @apply flex justify-between border-b border-zx-5 p-2;
+  @apply flex justify-between border-(b 0 solid zx-5) p-2;
 }
 .dialog-content {
   @apply box-border h-full overflow-auto p-2;

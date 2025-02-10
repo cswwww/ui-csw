@@ -1,9 +1,9 @@
 <!--
  * @Date: 2023-12-20 15:29:51
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-10-11 14:33:40
- * @FilePath: \storybook\src\components\Card\Card3.vue
- * @Description: 组件 - 卡片
+ * @LastEditTime: 2025-02-09 22:11:45
+ * @FilePath: \ui-csw\src\components\Card\Card3.vue
+ * @Description: 卡片 - 模板3
 -->
 <template>
   <!-- TODO 样式待调整 -->
@@ -25,7 +25,7 @@
     </div>
 
     <!-- 内容 -->
-    <div class="box-border h-[calc(100%-40px)] border border-zx-1 border-opacity-35">
+    <div class="box-border h-[calc(100%-40px)] border-(1px solid zx-1 opacity-35) ">
       <slot name="content" />
     </div>
   </div>

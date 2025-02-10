@@ -1,17 +1,17 @@
 <!--
  * @Date: 2024-03-01 11:00:28
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-07 08:54:29
- * @FilePath: \storybook\src\components\Title\LineTitle.vue
+ * @LastEditTime: 2025-02-10 16:30:07
+ * @FilePath: \ui-csw\src\components\Title\LineTitle.vue
  * @Description: 标题
 -->
-<script lang="ts" setup>
-withDefaults(
-  defineProps<{
-    label?: string
-  }>(),
-  {},
-)
+<script setup>
+defineProps({
+  label: {
+    type: String,
+    default: '',
+  },
+})
 </script>
 
 <template>

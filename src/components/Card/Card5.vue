@@ -1,11 +1,10 @@
 <!--
  * @Date: 2024-04-29 09:44:29
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-24 19:10:55
+ * @LastEditTime: 2025-02-10 09:16:42
  * @FilePath: \ui-csw\src\components\Card\Card5.vue
  * @Description: 卡片 - 模板5
 -->
-
 <template>
   <div class="dialog-container">
     <div class="flex justify-between p-2">
@@ -48,13 +47,15 @@
 .dec-1 {
   top: -1px;
   left: -1px;
-  border-width: 3px 0 0 3px;
+  border-style: solid;
+  border-width: 3px 0px 0px 3px;
   border-radius: 10px 0 0 0;
 }
 
 .dec-2 {
   top: -1px;
   right: -1px;
+  border-style: solid;
   border-width: 3px 3px 0 0;
   border-radius: 0 10px 0 0;
 }
@@ -62,6 +63,7 @@
 .dec-3 {
   bottom: -1px;
   left: -1px;
+  border-style: solid;
   border-width: 0 0 3px 3px;
   border-radius: 0 0 0 10px;
 }
@@ -69,6 +71,7 @@
 .dec-4 {
   bottom: -1px;
   right: -1px;
+  border-style: solid;
   border-radius: 0 0 10px 0;
   border-width: 0 3px 3px 0;
 }

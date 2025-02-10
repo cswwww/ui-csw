@@ -1,8 +1,8 @@
 /*
  * @Date: 2024-02-19 15:38:49
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-08-21 17:19:38
- * @FilePath: \storybook\src\components\Dialog\Dialog.ts
+ * @LastEditTime: 2025-02-10 09:47:09
+ * @FilePath: \ui-csw\src\components\Dialog\Dialog.ts
  * @Description: 函数式调用 - 通用彈窗组件
  * @Notice: 建议搭配组件使用 - Dialog1.vue
  */
@@ -38,6 +38,6 @@ export default createDialog
 // import Dialog1 from './components/Dialog/Dialog1.vue'
 // import Dialog from './components/Dialog/Dialog.ts'
 // Dialog({
-//   component: Dialog1
+//   component: Dialog1,
 //   params: []
 // })

@@ -1,11 +1,13 @@
 <!--
  * @Date: 2023-12-18 16:25:42
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-09-10 11:16:45
- * @FilePath: \storybook\src\components\Timeline\Timeline.vue
+ * @LastEditTime: 2025-02-10 16:16:36
+ * @FilePath: \ui-csw\src\components\Map\Timeline1.vue
  * @Description: 时间轴
 -->
 <script setup lang="ts">
+import { ref, watch, defineProps, defineEmits, withDefaults, defineExpose } from 'vue'
+
 const props = withDefaults(
   defineProps<{
     data: any // 时间轴数据

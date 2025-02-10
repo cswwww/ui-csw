@@ -1,11 +1,11 @@
 <!--
  * @Date: 2024-03-01 10:21:13
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2024-12-11 11:28:12
- * @FilePath: \ui-csw\src\components\Card\DataCard2.vue
+ * @LastEditTime: 2025-02-10 16:26:02
+ * @FilePath: \ui-csw\src\components\Statistic\DataCard2.vue
  * @Description: 组件 - 指标卡片
 -->
-<script setup lang="ts">
+<script setup>
 defineProps({
   label: String,
   num: [Number, String],

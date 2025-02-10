@@ -41,7 +41,7 @@ import 'ui-csw/dist/style.css'
 - `DataCard2` - 数据卡片样式二
 - `IconCard1` - 图标卡片一
 - `IconCard2` - 图标卡片二
-- `TitleCard` - 标题卡片
+- `Card1` - 标题卡片
 
 ### 对话框组件
 - `Dialog1` - 对话框组件
