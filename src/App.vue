@@ -7,6 +7,7 @@
       Right
     </template>
   </Header4>
+  <Footer1 />
   <div class="w-60 h-32">
     <card-5>
       <template #title>

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: ui-csw
   text: 私有组件
-  tagline: 一个基于 Vue 3 的轻量级可视化组件库。
+  tagline: 基于 Vue 3 的小型可视化大屏业务组件库。
   actions:
     - theme: brand
       text: Components
@@ -15,10 +15,10 @@ hero:
       link: /other/Sample
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 没有特性
+    details: 就很普通
+  - title: 语法简陋
+    details: 但是易懂
+  - title: 赞美开源
+    details: 所以开源
 ---

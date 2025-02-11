@@ -38,6 +38,7 @@ import Legend1 from './Map/Legend1.vue'
 import Timeline1 from './Map/Timeline1.vue'
 import LineTitle from './Title/LineTitle.vue'
 import MapTitle from './Map/MapTitle.vue'
+import Footer1 from './Footer/footer1.vue'
 
 // ! 方法
 import createDialog from './Dialog/Dialog.ts'
@@ -67,6 +68,7 @@ export {
   Timeline1,
   MapTitle,
   Card1,
+  Footer1,
 }
 
 export { createDialog }
@@ -98,5 +100,6 @@ export default {
     app.component('Header4', Header4)
     app.component('Legend1', Legend1)
     app.component('MapTitle', MapTitle)
+    app.component('Footer1', Footer1)
   },
 }

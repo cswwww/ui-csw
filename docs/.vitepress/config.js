@@ -26,6 +26,7 @@ export default defineConfig({
           { text: 'Border', link: '/components/Border' },
           { text: 'Card', link: '/components/Card' },
           { text: 'Dialog', link: '/components/Dialog' },
+          { text: 'Footer', link: '/components/Footer' },
           { text: 'Header', link: '/components/Header' },
           { text: 'Loading', link: '/components/Loading' },
           { text: 'Map', link: '/components/Map' },
