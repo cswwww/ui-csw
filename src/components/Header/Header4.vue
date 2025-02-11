@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-11 08:35:31
+ * @LastEditTime: 2025-02-11 10:12:42
  * @FilePath: \ui-csw\src\components\Header\Header4.vue
  * @Description: 头部导航栏 - 单图片 - 4
 -->
@@ -38,7 +38,7 @@ import headerBg from '../../assets/img/header4.svg'
 }
 
 .header-title {
-  @apply pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 select-none text-2xl font-semibold text-zx-1 drop-shadow-lg;
+  @apply pointer-events-none absolute left-1/2 top-[2px] -translate-x-1/2 select-none text-2xl font-semibold text-zx-1 drop-shadow-lg;
   letter-spacing: 0.18em;
   text-shadow: 2px 2px 4px #172554;
 }

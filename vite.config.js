@@ -39,9 +39,4 @@ export default defineConfig({
       // formats: ['es', 'umd', 'cjs']
     },
   },
-  server: {
-    host: '0.0.0.0',
-    proxy: {
-    },
-  },
 })
