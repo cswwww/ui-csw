@@ -1,12 +1,23 @@
 {
   "name": "ui-csw",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
+  "private": false,
+  "description": "基于 Vue 3 的小型可视化大屏业务组件库。",
   "author": "ReBeX",
+  "license": "MIT",
+  "homepage": "https://cswwww.github.io/ui-csw/",
   "repository": {
     "type": "git",
     "url": "https://github.com/cswwww/ui-csw.git"
   },
+  "keywords": [
+    "vue",
+    "component",
+    "ui",
+    "dashboard",
+    "visualization"
+  ],
   "main": "./dist/main.js",
   "module": "./dist/main.js",
   "files": [
