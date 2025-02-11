@@ -1,5 +1,5 @@
 // import { defineAsyncComponent } from 'vue'
-// import '../style/main.css'
+import 'virtual:uno.css'
 
 // ! 全局组件引用管理
 // import { defineAsyncComponent, AsyncComponentLoader } from 'vue'

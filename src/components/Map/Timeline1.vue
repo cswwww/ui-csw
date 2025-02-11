@@ -1,12 +1,12 @@
 <!--
  * @Date: 2023-12-18 16:25:42
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-10 16:16:36
+ * @LastEditTime: 2025-02-11 10:48:01
  * @FilePath: \ui-csw\src\components\Map\Timeline1.vue
  * @Description: 时间轴
 -->
 <script setup lang="ts">
-import { ref, watch, defineEmits, withDefaults, defineExpose } from 'vue'
+import { ref, watch } from 'vue'
 
 const props = withDefaults(
   defineProps<{
