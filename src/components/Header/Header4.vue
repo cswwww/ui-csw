@@ -1,21 +1,21 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-10 19:28:42
- * @FilePath: \ui-csw\src\components\Header\Header2.vue
- * @Description: 头部导航栏 - 单图片 - 2
+ * @LastEditTime: 2025-02-11 08:35:31
+ * @FilePath: \ui-csw\src\components\Header\Header4.vue
+ * @Description: 头部导航栏 - 单图片 - 4
 -->
 <script setup>
-import headerBg from '../../assets/img/header2.svg'
+import headerBg from '../../assets/img/header4.svg'
 </script>
 
 <template>
   <div class="header-container">
-    <img class="header-img" :src="headerBg">
+    <img class="header-img h-[39px]" :src="headerBg">
     <div class="header-side">
       <slot name="left" />
     </div>
-    <div class="w-[37%] min-w-[700px]">
+    <div class="w-[37%] min-w-[730px]">
       <div class="header-title">
         <slot name="center">
           空天地隧智能巡检系统
@@ -34,11 +34,11 @@ import headerBg from '../../assets/img/header2.svg'
 }
 
 .header-img {
-  @apply pointer-events-none absolute left-0 top-0 h-16 w-full select-none object-cover;
+  @apply pointer-events-none absolute left-0 top-0 w-full select-none object-cover;
 }
 
 .header-title {
-  @apply pointer-events-none absolute left-1/2 top-4 -translate-x-1/2 select-none text-2xl font-semibold text-zx-1 drop-shadow-lg;
+  @apply pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 select-none text-2xl font-semibold text-zx-1 drop-shadow-lg;
   letter-spacing: 0.18em;
   text-shadow: 2px 2px 4px #172554;
 }

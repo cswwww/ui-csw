@@ -6,7 +6,7 @@
  * @Description: 时间轴
 -->
 <script setup lang="ts">
-import { ref, watch, defineProps, defineEmits, withDefaults, defineExpose } from 'vue'
+import { ref, watch, defineEmits, withDefaults, defineExpose } from 'vue'
 
 const props = withDefaults(
   defineProps<{

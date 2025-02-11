@@ -1,5 +1,7 @@
 <script setup>
 import { Card2, Card3, Card4, Card5, Card1 } from '../../src/components/index.js'
+
+const cards = [Card1, Card2, Card3, Card4, Card5]
 </script>
 
 # Card
@@ -17,57 +19,17 @@ import { Card2, Card3, Card4, Card5, Card1 } from '../../src/components/index.js
 </Card>
 ```
 
-## Card1
+<template v-for="(Component, index) in cards" :key="index">
 
-<Card1>
+## Card{{ index + 1 }}
+
+<component :is="Component">
   <template #title>
     标题
   </template>
   <template #content>
     内容
   </template>
-</Card1>
+</component>
 
-## Card2
-
-<Card2>
-  <template #title>
-    标题
-  </template>
-  <template #content>
-    内容
-  </template>
-</Card2>
-
-## Card3
-
-<Card3>
-  <template #title>
-    标题
-  </template>
-  <template #content>
-    内容
-  </template>
-</Card3>
-
-## Card4
-
-<Card4>
-  <template #title>
-    标题
-  </template>
-  <template #content>
-    内容
-  </template>
-</Card4>
-
-## Card5
-
-<Card5>
-  <template #title>
-    标题
-  </template>
-  <template #content>
-    内容
-  </template>
-</Card5>
+</template>
