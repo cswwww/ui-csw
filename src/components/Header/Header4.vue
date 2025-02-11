@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-12-02 15:49:26
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-11 14:37:51
+ * @LastEditTime: 2025-02-11 20:55:41
  * @FilePath: \ui-csw\src\components\Header\Header4.vue
  * @Description: 头部导航栏 - 中間图片 - 4
 -->
@@ -34,7 +34,7 @@ import headerBg from '../../assets/img/header4.svg'
 
 <style scoped>
 .header-container {
-  @apply fixed z-10 box-border flex h-[40px] w-full justify-between overflow-hidden px-2;
+  @apply fixed z-10 box-border flex h-[45px] w-full justify-between overflow-hidden px-2;
 }
 
 .header-title {

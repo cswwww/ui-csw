@@ -3,7 +3,7 @@
  * @LastEditors: ReBeX  cswwwx@gmail.com
  * @LastEditTime: 2025-02-11 15:20:04
  * @FilePath: \ui-csw\src\components\Footer\footer1.vue
- * @Description: 页面底部的导航区域 <footer-bar />
+ * @Description: 页脚 1
 -->
 <script setup>
 import footerImg from '../../assets/img/footer1.svg'
