@@ -1,9 +1,9 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-10 19:28:42
+ * @LastEditTime: 2025-02-11 14:35:18
  * @FilePath: \ui-csw\src\components\Header\Header2.vue
- * @Description: 头部导航栏 - 单图片 - 2
+ * @Description: 头部导航栏 - 单縂背景图片 - 2
 -->
 <script setup>
 import headerBg from '../../assets/img/header2.svg'
