@@ -1,7 +1,7 @@
 <!--
  * @Date: 2024-03-01 11:00:28
  * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-10 16:09:01
+ * @LastEditTime: 2025-02-19 15:40:09
  * @FilePath: \ui-csw\src\components\Map\Legend1.vue
  * @Description: 地图 - 图例
 -->
@@ -47,8 +47,8 @@ function getSceneLegend() {
     const { group = '其他', ...rest } = curr // 如果没有组名，则默认为'其他'
     const existingGroup = acc.find(item => item.groupTitle === group)
     existingGroup
-      ? existingGroup.legendList.push(rest)
-      : acc.push({ groupTitle: group, legendList: [rest] })
+      ? existingGroup.legendList.push(rest) // 如果组已存在，则添加图例到该组的列表中
+      : acc.push({ groupTitle: group, legendList: [rest] }) // 如果组不存在，则创建一个新组并添加图例
     return acc
   }, [])
 }

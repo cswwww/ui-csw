@@ -1,7 +1,7 @@
 <script setup>
-import { Card2, Card3, Card4, Card5, Card1 } from '../../src/components/index.js'
+import { Card2, Card3, Card4, Card5, Card1, Card6 } from '../../src/components/index.js'
 
-const cards = [Card1, Card2, Card3, Card4, Card5]
+const cards = [Card1, Card2, Card3, Card4, Card5, Card6]
 </script>
 
 # Card
