@@ -34,6 +34,7 @@ import Header1 from './Header/Header1.vue'
 import Header2 from './Header/Header2.vue'
 import Header3 from './Header/Header3.vue'
 import Header4 from './Header/Header4.vue'
+import Header5 from './Header/Header5.vue'
 import Loading from './Loading/Loading.vue'
 import Legend1 from './Map/Legend1.vue'
 import Timeline1 from './Map/Timeline1.vue'
@@ -62,6 +63,7 @@ export {
   Header2,
   Header3,
   Header4,
+  Header5,
   IconCard1,
   IconCard2,
   Legend1,
@@ -102,6 +104,7 @@ export default {
     app.component('Header2', Header2)
     app.component('Header3', Header3)
     app.component('Header4', Header4)
+    app.component('Header5', Header5)
     app.component('Legend1', Legend1)
     app.component('MapTitle', MapTitle)
     app.component('Footer1', Footer1)

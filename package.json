@@ -1,7 +1,7 @@
 {
   "name": "ui-csw",
   "type": "module",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "private": false,
   "description": "基于 Vue 3 的小型可视化大屏业务组件库。",
   "author": "ReBeX",
