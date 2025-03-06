@@ -35,7 +35,7 @@ import Header2 from './Header/Header2.vue'
 import Header3 from './Header/Header3.vue'
 import Header4 from './Header/Header4.vue'
 import Header5 from './Header/Header5.vue'
-import Loading from './Loading/Loading.vue'
+import Loading1 from './Loading/Loading1.vue'
 import Legend1 from './Map/Legend1.vue'
 import Timeline1 from './Map/Timeline1.vue'
 import LineTitle from './Title/LineTitle.vue'
@@ -68,7 +68,7 @@ export {
   IconCard2,
   Legend1,
   LineTitle,
-  Loading,
+  Loading1,
   Timeline1,
   MapTitle,
   Card1,
@@ -82,7 +82,7 @@ export { createDialog }
 export default {
   install(app) {
     app.component('zxButton', zxButton)
-    app.component('zxLoading', Loading)
+    app.component('Loading1', Loading1)
     app.component('LineTitle', LineTitle)
     app.component('Button1', Button1)
     app.component('Button2', Button2)

@@ -1,5 +1,5 @@
 <script setup>
-import { Loading } from '../../src/components/index.js'
+import { Loading1 } from '../../src/components/index.js'
 </script>
 
 # Loading
@@ -8,7 +8,7 @@ import { Loading } from '../../src/components/index.js'
 
 [SpinKit | Simple CSS Spinners](https://tobiasahlin.com/spinkit/)
 
-<Loading />
+<Loading1 />
 
 ```vue
 <Loading1 />

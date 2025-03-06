@@ -4,14 +4,14 @@ layout: home
 
 hero:
   name: ui-csw
-  text: 私有组件
-  tagline: 基于 Vue 3 的小型可视化大屏业务组件库。
+  text: 基于 Vue 3 的大屏可视化组件库
+  tagline: 搬运 + 可视化
   actions:
     - theme: brand
-      text: Components
+      text: 组件
       link: /components/Button
     - theme: alt
-      text: Sample
+      text: 示例
       link: /other/Sample
 
 features:
