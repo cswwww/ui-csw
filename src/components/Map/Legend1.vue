@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-03-01 11:00:28
- * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-19 15:40:09
- * @FilePath: \ui-csw\src\components\Map\Legend1.vue
+ * @LastEditors: ReBeX cswwwx@gmail.com
+ * @LastEditTime: 2025-04-08 14:58:48
+ * @FilePath: /ui-csw/src/components/Map/Legend1.vue
  * @Description: 地图 - 图例
 -->
 
@@ -77,7 +77,7 @@ defineExpose({
     </div>
 
     <!-- 图例内容 -->
-    <div v-if="showLegend" class="max-h-[50vh] overflow-y-auto">
+    <div v-if="showLegend" class="max-h-[40vh] overflow-y-auto pr-2">
       <div v-for="item in legendGroup ? legendGroup : getSceneLegend()" :key="item.groupTitle">
         <div class="mb-1 flex items-center justify-between text-zx-4">
           <div class="text-sm">

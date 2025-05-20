@@ -1,5 +1,4 @@
-// import { defineAsyncComponent } from 'vue'
-import 'virtual:uno.css'
+import Border1 from './Border/Border1.vue'
 
 // ! 全局组件引用管理
 // import { defineAsyncComponent, AsyncComponentLoader } from 'vue'
@@ -13,44 +12,46 @@ import 'virtual:uno.css'
 //   }
 // }
 
-// ! 组件
-import zxButton from './Button/zxButton.vue'
+import Border2 from './Border/Border2.vue'
 import Button1 from './Button/Button1.vue'
 import Button2 from './Button/Button2.vue'
-import Border1 from './Border/Border1.vue'
-import Border2 from './Border/Border2.vue'
+// ! 组件
+import zxButton from './Button/zxButton.vue'
+import Card1 from './Card/Card1.vue'
 import Card2 from './Card/Card2.vue'
 import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
 import Card5 from './Card/Card5.vue'
 import Card6 from './Card/Card6.vue'
-import DataCard1 from './Statistic/DataCard1.vue'
-import DataCard2 from './Statistic/DataCard2.vue'
-import IconCard1 from './Statistic/IconCard1.vue'
-import IconCard2 from './Statistic/IconCard2.vue'
-import Card1 from './Card/Card1.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
+// ! 方法
+import createDialog from './Dialog/Dialog.ts'
+import Footer1 from './Footer/Footer1.vue'
+import Footer2 from './Footer/Footer2.vue'
 import Header1 from './Header/Header1.vue'
 import Header2 from './Header/Header2.vue'
 import Header3 from './Header/Header3.vue'
 import Header4 from './Header/Header4.vue'
 import Header5 from './Header/Header5.vue'
+import Header6 from './Header/Header6.vue'
 import Loading1 from './Loading/Loading1.vue'
 import Legend1 from './Map/Legend1.vue'
-import Timeline1 from './Map/Timeline1.vue'
-import LineTitle from './Title/LineTitle.vue'
 import MapTitle from './Map/MapTitle.vue'
-import Footer1 from './Footer/Footer1.vue'
-import Footer2 from './Footer/Footer2.vue'
-// ! 方法
-import createDialog from './Dialog/Dialog.ts'
+import Timeline1 from './Map/Timeline1.vue'
+import DataCard1 from './Statistic/DataCard1.vue'
+import DataCard2 from './Statistic/DataCard2.vue'
+import IconCard1 from './Statistic/IconCard1.vue'
+import IconCard2 from './Statistic/IconCard2.vue'
+import LineTitle from './Title/LineTitle.vue'
+// import { defineAsyncComponent } from 'vue'
+import 'virtual:uno.css'
 
 export {
-  zxButton,
-  Button1,
-  Button2,
   Border1,
   Border2,
+  Button1,
+  Button2,
+  Card1,
   Card2,
   Card3,
   Card4,
@@ -59,21 +60,22 @@ export {
   DataCard1,
   DataCard2,
   Dialog1,
+  Footer1,
+  Footer2,
   Header1,
   Header2,
   Header3,
   Header4,
   Header5,
+  Header6,
   IconCard1,
   IconCard2,
   Legend1,
   LineTitle,
   Loading1,
-  Timeline1,
   MapTitle,
-  Card1,
-  Footer1,
-  Footer2,
+  Timeline1,
+  zxButton,
 }
 
 export { createDialog }
