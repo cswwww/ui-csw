@@ -107,6 +107,7 @@ export default {
     app.component('Header3', Header3)
     app.component('Header4', Header4)
     app.component('Header5', Header5)
+    app.component('Header6', Header6)
     app.component('Legend1', Legend1)
     app.component('MapTitle', MapTitle)
     app.component('Footer1', Footer1)
