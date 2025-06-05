@@ -1,8 +1,8 @@
 <!--
  * @Date: 2023-12-18 16:33:37
- * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-26 15:11:04
- * @FilePath: \ui-csw\src\components\Header\Header5.vue
+ * @LastEditors: ReBeX cswwwx@gmail.com
+ * @LastEditTime: 2025-06-04 08:41:22
+ * @FilePath: /ui-csw/src/components/Header/Header5.vue
  * @Description: 头部导航栏 - 单縂背景图片 - 5
  * @Ref: https://github.com/fengtianxi001/MF-TurbineMonitor
 -->
@@ -20,7 +20,7 @@ import headerBg from '../../assets/img/header5.png'
     <div class="w-[40%] min-w-[700px]">
       <div class="header-title">
         <slot name="center">
-          空天地隧智能巡检系统
+          平台名称
         </slot>
       </div>
     </div>

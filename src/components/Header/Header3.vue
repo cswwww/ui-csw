@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-12-02 15:49:26
- * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-10 22:34:23
- * @FilePath: \ui-csw\src\components\Header\Header3.vue
+ * @LastEditors: ReBeX cswwwx@gmail.com
+ * @LastEditTime: 2025-06-04 08:41:18
+ * @FilePath: /ui-csw/src/components/Header/Header3.vue
  * @Description: 头部导航栏 - 单图片|两图标 - 3
 -->
 <script setup>
@@ -25,7 +25,7 @@ import navCenter from '../../assets/img/navCenter3.svg'
         class="header-title"
       >
         <slot name="center">
-          星空地智能巡检平台
+          平台名称
         </slot>
       </div>
     </div>

@@ -1,13 +1,13 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX cswwwx@gmail.com
- * @LastEditTime: 2025-06-04 08:41:15
- * @FilePath: /ui-csw/src/components/Header/Header2.vue
- * @Description: 头部导航栏 - 单縂背景图片 - 2
+ * @LastEditTime: 2025-06-05 16:15:21
+ * @FilePath: /ui-csw/src/components/Header/Header7.vue
+ * @Description: 头部导航栏 - 单縂背景图片 - 7
 -->
 
 <script setup>
-import headerBg from '../../assets/img/header2.svg'
+import headerBg from '../../assets/img/header7.svg'
 </script>
 
 <template>
@@ -16,7 +16,7 @@ import headerBg from '../../assets/img/header2.svg'
     <div class="header-side">
       <slot name="left" />
     </div>
-    <div class="w-[37%] min-w-[700px]">
+    <div class="w-[40%] min-w-[700px]">
       <div class="header-title">
         <slot name="center">
           平台名称

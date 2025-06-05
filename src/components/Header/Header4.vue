@@ -1,8 +1,8 @@
 <!--
  * @Date: 2024-12-02 15:49:26
- * @LastEditors: ReBeX  cswwwx@gmail.com
- * @LastEditTime: 2025-02-11 20:55:41
- * @FilePath: \ui-csw\src\components\Header\Header4.vue
+ * @LastEditors: ReBeX cswwwx@gmail.com
+ * @LastEditTime: 2025-06-04 08:41:20
+ * @FilePath: /ui-csw/src/components/Header/Header4.vue
  * @Description: 头部导航栏 - 中間图片 - 4
 -->
 <script setup>
@@ -22,7 +22,7 @@ import headerBg from '../../assets/img/header4.svg'
         class="header-title"
       >
         <slot name="center">
-          星空地智能巡检平台
+          平台名称
         </slot>
       </div>
     </div>

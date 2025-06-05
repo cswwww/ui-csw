@@ -1,7 +1,7 @@
 <!--
  * @Date: 2023-12-18 16:33:37
  * @LastEditors: ReBeX cswwwx@gmail.com
- * @LastEditTime: 2025-05-20 10:03:17
+ * @LastEditTime: 2025-06-04 08:41:24
  * @FilePath: /ui-csw/src/components/Header/Header6.vue
  * @Description: 头部导航栏 - 单縂背景图片 - 6
 -->
@@ -19,7 +19,7 @@ import headerBg from '../../assets/img/header6.svg'
     <div class="w-[40%] min-w-[700px]">
       <div class="header-title">
         <slot name="center">
-          空天地隧智能巡检系统
+          平台名称
         </slot>
       </div>
     </div>
