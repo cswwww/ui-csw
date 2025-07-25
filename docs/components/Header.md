@@ -1,7 +1,7 @@
 <script setup>
-import { Header1, Header2, Header3, Header4, Header5, Header6, Header7 } from '../../src/components/index.js'
+import { Header1, Header2, Header3, Header4, Header5, Header6, Header7, Header8 } from '../../src/components/index.js'
 
-const headers = [Header1, Header2, Header3, Header4, Header5, Header6, Header7]
+const headers = [Header1, Header2, Header3, Header4, Header5, Header6, Header7, Header8]
 
 </script>
 

@@ -1,12 +1,12 @@
 <template>
-  <Header7>
+  <Header8>
     <template #left>
       Left
     </template>
     <template #right>
       Right
     </template>
-  </Header7>
+  </Header8>
   <Footer1 />
   <div class="w-60 h-32">
     <card-5>
