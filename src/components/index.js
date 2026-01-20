@@ -23,6 +23,7 @@ import Card3 from './Card/Card3.vue'
 import Card4 from './Card/Card4.vue'
 import Card5 from './Card/Card5.vue'
 import Card6 from './Card/Card6.vue'
+import Card7 from './Card/Card7.vue'
 import Dialog1 from './Dialog/Dialog1.vue'
 // ! 方法
 import createDialog from './Dialog/Dialog.ts'
@@ -59,6 +60,7 @@ export {
   Card4,
   Card5,
   Card6,
+  Card7,
   DataCard1,
   DataCard2,
   Dialog1,
@@ -105,6 +107,7 @@ export default {
     app.component('Card4', Card4)
     app.component('Card5', Card5)
     app.component('Card6', Card6)
+    app.component('Card7', Card7)
     app.component('Timeline1', Timeline1)
     app.component('Header1', Header1)
     app.component('Header2', Header2)

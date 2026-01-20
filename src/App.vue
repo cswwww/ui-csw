@@ -1,23 +1,14 @@
 <template>
-  <Header8>
-    <template #left>
-      Left
-    </template>
-    <template #right>
-      Right
-    </template>
-  </Header8>
-  <Footer1 />
-  <div class="w-60 h-32">
-    <card-5>
-      <template #title>
-        标题
-      </template>
-      <template #content>
-        内容
-      </template>
-    </card-5>
+  <div class="w-[100vw] h-[100vh] bg-black">
+    <div class="w-80 h-32">
+      <card-7>
+        <template #title>
+          标题
+        </template>
+        <template #content>
+          内容
+        </template>
+      </card-7>
+    </div>
   </div>
-
-  <zx-button>Click me</zx-button>
 </template>
